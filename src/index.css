@@ -8,33 +8,48 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 210 25% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 210 25% 10%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 210 25% 10%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 80% 55%;
+    --primary-foreground: 210 25% 8%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 25% 15%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 25% 15%;
+    --muted-foreground: 210 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 80% 45%;
+    --accent-foreground: 210 25% 8%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 25% 20%;
+    --input: 210 25% 15%;
+    --ring: 210 80% 55%;
+
+    /* Automotive-specific design tokens */
+    --automotive-blue: 210 80% 55%;
+    --automotive-blue-light: 210 70% 65%;
+    --automotive-blue-dark: 210 90% 35%;
+    --metallic: 210 15% 75%;
+    --warning-amber: 45 95% 55%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--automotive-blue)), hsl(var(--automotive-blue-dark)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(210 25% 12%));
+    
+    /* Shadows */
+    --shadow-automotive: 0 10px 30px -10px hsl(var(--automotive-blue) / 0.3);
+    --shadow-card: 0 8px 25px -8px hsl(210 25% 5% / 0.4);
 
     --radius: 0.5rem;
 

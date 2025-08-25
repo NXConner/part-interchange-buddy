@@ -24,6 +24,13 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				automotive: {
+					blue: 'hsl(var(--automotive-blue))',
+					'blue-light': 'hsl(var(--automotive-blue-light))',
+					'blue-dark': 'hsl(var(--automotive-blue-dark))',
+					metallic: 'hsl(var(--metallic))',
+				},
+				'warning-amber': 'hsl(var(--warning-amber))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
