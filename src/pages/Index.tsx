@@ -48,7 +48,15 @@ const Index = () => {
     vehicle: { year: string; make: string; model: string };
     part: { category: string; name: string; partNumber?: string };
   } | null>(null);
-  const [results, setResults] = useState<any[]>([]);
+  type Result = {
+    year: string;
+    make: string;
+    model: string;
+    confidence: "high" | "medium";
+    partNumber: string;
+    notes: string;
+  };
+  const [results, setResults] = useState<Result[]>([]);
 
   const handleVehicleChange = (vehicle: { year: string; make: string; model: string }) => {
     setSelectedVehicle(vehicle);
